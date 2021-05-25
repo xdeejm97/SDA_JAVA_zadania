@@ -12,8 +12,8 @@ public class Instructions {
 
        // System.out.println(getPalindrom(tabPalindrom));
        // System.out.println(getPalindrom1(tabPalindrom));
-       System.out.println(getWordReverse(wordReverseOne));
-        //System.out.println(getTwoHighestValue(numbersTab));
+       //System.out.println(getWordReverse(wordReverseOne));
+        System.out.println(getTwoHighestValue(numbersTab));
     }
 
     //Zad1
@@ -24,9 +24,10 @@ public class Instructions {
         for (String word : tabPalindrom) {
             System.out.println(word);
             String textReverse = new StringBuilder(word).reverse().toString();
-            System.out.println(textReverse);
-        }
-        return "";
+            if(textReverse.equals(word)) {
+                return textReverse;
+            }
+        } return "";
     }
     private static String getPalindrom1(String[] tabPalindrom) {
         boolean isPalindrom;
@@ -41,14 +42,14 @@ public class Instructions {
     private static int getTwoHighestValue(int[] numbersTab){
         int a = numbersTab[0];
         int b = 0;
-        int[][] twoValue = new int[a][b];
         StringBuilder stringBuilder = new StringBuilder();
         for(int i = 0; i < numbersTab.length; i++) {
             if (numbersTab[i] > a) {
                 a = numbersTab[i];
-
-
             }
+            if()
+
+
         } return a;
     }
     //Zad3
